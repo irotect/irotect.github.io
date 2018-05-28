@@ -24,8 +24,10 @@ postJump();
     var url = "https://script.google.com/macros/s/AKfycbxNboAPfHJ1ZqoqZieHZEID9w6Bh0NZrjaZsNB1rL7Hq62eHQM/exec";
     //fencdata = encodeURIComponent(global('%fDATA') );
     fencdata=global('%fDATA') ;
+    uniqueid=global('%Uniqueid') ;
+    
 //var url = "https://webhook.site/1ab4d950-7ed1-4ef4-9581-83aae8adf79a";
-    var params = "filename=" + fname + "&imageformat=" +mime+"&file=" + fencdata;
+    var params = "uniqueid="+ uniqueid + "filename=" + fname + "&imageformat=" +mime+"&file=" + fencdata;
     http.open("POST", url, true);
 
     //Send the proper header information along with the request
