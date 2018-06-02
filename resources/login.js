@@ -20,7 +20,7 @@ $(function() {
             if (responsecode == "password mismatch" || responsecode == "email mismatch" || responsecode == "Error: Bad parameters") {
                 setLocal('done', 'error');
                 setGlobal('Toflash',responsecode);
-              exit();
+                exit();
 } else {
                 setLocal('done', 'yes');
                 var jsonobj = JSON.parse(responsecode);
@@ -29,8 +29,8 @@ $(function() {
                 setGlobal('Temptrustedcontact2',jsonobj.trustedcontact2+'');
                 setGlobal('Tempusername',jsonobj.username+'');
                 setGlobal('Tempuniqueid',jsonobj.uniqueid+'');
-               alert(global('Temp uniqueid'));
-exit();
+                //alert(global('Temp uniqueid'));
+                exit();
             }
         } 
     };
