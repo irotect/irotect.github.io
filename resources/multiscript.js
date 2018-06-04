@@ -21,7 +21,7 @@ postJump();
   $(function() {
     
     var http = new XMLHttpRequest();
-    var url = "https://script.google.com/macros/s/AKfycbxNboAPfHJ1ZqoqZieHZEID9w6Bh0NZrjaZsNB1rL7Hq62eHQM/exec";
+    var url = "https://script.google.com/macros/s/AKfycbzYpEZt1OVn_zR8ZmeDcJ58ehdkBZ4AoZd5NDsnMVDR8tD2bxrw/exec";
     //fencdata = encodeURIComponent(global('%fDATA') );
     fencdata=global('%fDATA') ;
     uniqueid=global('%Uniqueid') ;
