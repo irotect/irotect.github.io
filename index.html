@@ -16,7 +16,11 @@
     <!-- Themify Icons -->
     <link rel="stylesheet" href="home/css/themify-icons.css">
     <!-- Owl carousel -->
-    <link rel="stylesheet" href="home/css/owl.carousel.min.css">
+    <!--<link rel="stylesheet" href="home/css/owl.carousel.min.css">-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="home/slick/slick-theme.css">
+    
     <!-- Main css -->
     <link href="home/css/style.css" rel="stylesheet">
 </head>
@@ -251,17 +255,30 @@
     </div>
     <!-- // end .section -->
     <div class="section light-bg" id="gallery">
-        <div class="container">
+        <div class="container align-items-center justify-content-md-center">
             <div class="section-title">
                 <small>GALLERY</small>
                 <h3>App Screenshots</h3>
             </div>
-            <div class="img-gallery owl-carousel owl-theme">
-                <img src="home/images/screen1.png" alt="image">
-                <img src="home/images/screen2.png" alt="image">
-                <img src="home/images/screen3.png" alt="image">
-                <img src="home/images/screen4.png" alt="image">
-                <img src="home/images/screen5.png" alt="image">
+            <div class="row align-items-center justify-content-md-center">
+                <div class="col d-none d-md-block text-center">
+                <a class="previous"><span class="ti-angle-left"></span></a>
+                </div>
+                <div class="myclass-gallery col-md-10">
+                    <div class="item"><a href="home/images/screen1.png" target="_blank" class="thumbnail"><img class="mx-auto" width="50%" height="auto" src="home/images/screen1.png" alt=""></a>
+                    </div>
+                    <div class="item"><a href="home/images/screen2.png" target="_blank" class="thumbnail"><img class="mx-auto" width="50%" height="auto" src="home/images/screen2.png" alt=""></a>
+                    </div>
+                    <div class="item"><a href="home/images/screen3.png" target="_blank" class="thumbnail"><img class="mx-auto" width="50%" height="auto" src="home/images/screen3.png" alt=""></a>
+                    </div>
+                    <div class="item"><a href="home/images/screen4.png" target="_blank" class="thumbnail"><img class="mx-auto" width="50%" height="auto" src="home/images/screen4.png" alt=""></a>
+                    </div>
+                    <div class="item"><a href="home/images/screen5.png" target="_blank" class="thumbnail"><img class="mx-auto" width="50%" height="auto" src="home/images/screen5.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col d-none d-md-block text-center">
+                <a class="next"><span class="ti-angle-right center-block"></span></a>
+                </div>
             </div>
         </div>
     </div>
@@ -425,7 +442,10 @@ font-size: 15px;">Download</a>
     <script src="home/js/jquery-3.2.1.min.js"></script>
     <script src="home/js/bootstrap.bundle.min.js"></script>
     <!-- Plugins JS -->
-    <script src="home/js/owl.carousel.min.js"></script>
+    <!--<script src="home/js/owl.carousel.min.js"></script>-->
+    <!-- slick image gallery js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js"></script>
     <!-- Custom JS -->
     <script src="home/js/script.js"></script>
 </body>
