@@ -40,14 +40,15 @@ $(function() {
     var siteNav = $('#navbar');
     siteNav.on('show.bs.collapse', function(e) {
         $(this).parents('.nav-menu').addClass('menu-is-open');
-    })
+    });
     siteNav.on('hide.bs.collapse', function(e) {
         $(this).parents('.nav-menu').removeClass('menu-is-open');
-    })
+    });
 
     /*-----------------------------------
      * ONE PAGE SCROLLING
      *-----------------------------------*/
+
     // Select all links with hashes
     $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').not('[data-toggle="tab"]').on('click', function(event) {
         // On-page links
@@ -71,11 +72,12 @@ $(function() {
                     } else {
                         $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
                         $target.focus(); // Set focus again
-                    };
+                    }
                 });
             }
         }
     });
+
     /*-----------------------------------
      * OWL CAROUSEL
      *-----------------------------------*/
@@ -109,4 +111,23 @@ $(function() {
         });
     }
 
+    /*----------------------------
+     * SLICK CONFIGURATION
+     *-----------------------------*/
+    $('.myclass-gallery').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        arrows: true,
+        prevArrow: '.previous',
+        nextArrow: '.next',
+        dots: true,
+        focusOnSelect: true,
+        slide: 'div'
+    });
+    $('.myclass-gallery').slickLightbox({
+        itemSelector: 'a',
+        navigateByKeyboard: true,
+    });
 }); /* End Fn */
