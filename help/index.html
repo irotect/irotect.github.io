@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Irotect Guide</title>
+<meta charset="UTF-8">
+  <meta name="description" content="Irotect help and support">
+  <meta name="keywords" content="Irotect, Help, Guide, support">
+  <meta name="author" content="Mayank Thakur">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h2>Irotect Guide</h2>
+
+<h4>Quick Links</h4>
+<ul type="circle">
+	<li><a href="#main_screen">Main Screen</a></li>
+	<li><a href="#intruder_sefie_gallery">Intruder Selfie Gallery</a></li>
+	<li><a href="#emergency_call">Emergency Call</a></li>
+	<li><a href="#settings_screen">Settings Screen</a></li>
+	<li><a href="#commands">SMS Commands</a></li>
+	<li><a href="#faq">FAQ</a></li>
+</ul>
+<h4>Web Links</h4>
+<ul type="circle">
+	<li><a href="https://irotect.github.io">Homepage</a></li>
+	<li><a href="https://irotect.github.io/privacypolicy">Privacy Policy</a></li>
+	<li><a href="https://irotect.github.io/termsandconditions">Terms &amp; Conditions</a></li>
+	<li><a href="https://irotect.github.io/forgot_password">Forgot Password</a></li>
+	<li><a href="https://irotect.github.io/reset_password">Reset Password</a></li>
+</ul>
+<br>
+<div id="main_screen">
+	<h3>Main Screen</h3>
+	<p>This is the first screen shown when you startup Irotect. It contains three cards which report the conditions of your mobile phone.</p>
+	<ul>
+		<li><b>Version Card</b> - this card checks for latest irotect version and is red if you does not have latest version.</li>
+		<li><b>Service Card</b> - this card checks if the irotect service is running and is red if there is some type of interuption in the running of the servces. It is very important for the irotect services to run properly for the app functionality.</li>
+		<li><b>Root Card</b> - this card checks if your phone has root permissions. Rooted mobiles can perform special commands.</li>
+	</ul>
+</div>
+<div id="intruder_sefie_gallery">
+	<h3>Intruder Selfie Gallery</h3>
+    <p>It us the app's built-in gallery to see the intruder selfies taken by the "#take_intruder_selfie" command. It can be accessed by going to 'main screen->three line menu->intruder selfie'.</p>
+</div>
+<div id="emergency_call">
+	<h3>Emergency Call</h3>
+    <p>It is one of the key features of irotect. After first opening of the app the app adds a contact "iROTECT SOS" in your phone directory which you can use in time of danger/emergency or you can directly call "<b>252525</b>" from your favourite dialer.</p>
+    <p>This call triggers a set of tasks in irotect like 
+    	<ul>
+    		<li>Turns on vibration mode</li>
+    		<li>Increases ringer volme to 100%</li>
+    		<li>Sends an SMS to the 2 trusted contacts provided by the user asking them to contact you as soon as possible</li>
+    		<li>Within 5 mins sends periodic(per 5 min) sms to both trusted contacts containing the location and other device informations.(these tracking sms can be stopped by using '#stop_tracking' command.)</li>
+        </ul>
+    </p>
+</div>
+<div id="settings_screen">
+	<h3>Settings Screen</h3>
+	<p>This is the main settings screen of the app. It can be accessed in 'menu(three dot menu on top right corner)->settings'.
+	<ul>
+		<li>Intruder selfie resolution : helps you to set the resolution of images taken using '#take_intruder_selfie' command.</li>
+		<li>GPS Tracking : Used to trigger the access of '#start_tracking' command. <b>I recomend keeping it ON</b></li>
+		<li>SMS services : Used to trigger the running of commands through SMS. <b>I recomend keeping it ON</b></li>
+		<li>Trusted Contacts : these are the contacts who has access to SMS services. <b>Note - </b>Trusted Contact 1 is notified if sim card changes state or if the device is rebooted.</li>
+	</ul>
+	</p>
+</div>
+<div id="commands">
+	<h3>Commands</h3>
+<p>The key operations in irotect are performed through SMS Commands. The specific features are triggered when the mobile phone recieves a specific command as SMS body which are then processed and presented accordingly. The currently available SMS commands are:</p>
+<ul>
+	<li><b>#call_me</b><br>
+    This command calls the sender from the device running irotect.
+    </li>
+    <li><b>#start_tracking</b><br>
+    This command starts the gps tracking and replies with periodic messages with gps location of device and other basic information untill stopped by '#stop_tracking' command.
+    </li>
+    <li><b>#stop_tracking</b><br>
+    This command stops the periodic tracking of the device started by '#start_tracking' command.
+    </li>
+    <li><b>#say_loud</b><br>
+    This command speaks the text written after this command inside the SMS body. <i>This command is not guaranted to run in all devices.</i>
+    </li>
+    <li><b>#emergency_alarm</b><br>
+    This command rings the phone with an emergency siren sound even if the device is silent. <i>This sound can be stopped by '#stop_emergency_alarm' command.</i>
+    </li>
+    <li><b>#take_intruder_selfie</b><br>
+    This command captures a photograph from front and rear camera symultaneously and silently. These images can be accesed from the app by going to (app->three line menu->intruder selfies) or by using '#email_intruder_selfie' command.
+    </li>
+    <li><b>#email_intruder_selfie</b><br>
+    This command sends an email to the registered email address with the images taken from '#take_intruder_selfie' command as attachment. <i>This command needs internet connection to work properly.</i>
+    </li>
+</ul>
+<div id="faq">
+<h3>Frequently Asked Questions</h3>
+	<b>Why won't Android let me uninstall Irotect&#32;&#63;</b>
+	<br>
+	<p>It's probably because Irotect is set as an administrator in the android settings. It is used as an security measure to prevent the intruder from uninstalling Irotect from home screen.</p>
+	<p>You can disable it by going to <code>Android Settings / Location & Security / Device Administration</code>.</p>
+	<!------------------------------------------------>
+	<b>Why isn't Irotect tracking my location&#32;&#63;</b>
+	<br>
+	<p>Please make sure your GPS is turned on and Irotect has permissions to access GPS. If still the app is not able to return your GPS cordinates feel free to contact the Developer.</p>
+	<!------------------------------------------------>
+	<b>How can i send the SMS commands&#32;&#63;</b>
+	<br>
+	<p>This is very easy you just have to send the sms command(in message body <b>one at a time</b>) to the phone number currently activated in the device.<br>
+		<b>Note - </b>
+		<ul>
+			<li>The SMS commands are triggered only if the SMS is sent from one of the trusted contacts saved inside the app.</li>
+			<li>The SMS commands are case sensitive</li>
+			<li>the SMS commands consist of only letters and underscore "_" character</li>
+		</ul>
+	</p>
+	<!------------------------------------------------>
+	<b>How can I contact the developer&#32;&#63;</b>
+	<br>
+	<p>There is a contact email given at <code>Menu / About</code>. In general, this is intended for order and validation help, which is often confidential, and other private issues.</p>
+	<!------------------------------------------------>
+    <b>Can Irotect be used from an external SD card&#32;&#63;</b>
+    <br>
+    <p>Prior to Android 6.0, that is not possible, even using apps2SD.</p>
+	<!------------------------------------------------>
+    <b>Does Irotect need constant internet connection&#32;&#63;</b>
+    <br>
+    <p>No, Irotect just needs internet connection on first app start to download basic resources needed for the proper functioning of the app. '#email_intruder_selfie' command is the only command which needs internet connection but just for a couple of seconds.</p>
+	<!------------------------------------------------>
+    <b>Can Irotect locate my device if the mobile is switched off&#32;&#63;</b>
+    <br>
+    <p>It is impossible for any app to run when the device is switched off.</p>
+	<!------------------------------------------------>
+    <b>How can i use the Location Coordinates returned by Irotect&#32;&#63;</b>
+    <br>
+    <p>You can search the coordinates in Google Maps app or website. <a href="https://support.google.com/maps/answer/18539" target="_new">click here</a> to know more.</p>
+	<!------------------------------------------------>
+    <b>Why isn't Irotect availabe in Google Play Store&#32;&#63;</b>
+    <br>
+    <p>The app is currently under beta development so we have not considered adding it to google play store but we are sure in near future the app will be made available to users in google play store.</p>
+</div>
+</body>
+</html>
