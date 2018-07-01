@@ -84,11 +84,23 @@
     <li><b>#emergency_alarm</b><br>
     This command rings the phone with an emergency siren sound even if the device is silent. <i>This sound can be stopped by '#stop_emergency_alarm' command.</i>
     </li>
+    <li><b>#stop_emergency_alarm</b><br>
+    This command is used to stop emergency alarm</i>
+    </li>
     <li><b>#take_intruder_selfie</b><br>
     This command captures a photograph from front and rear camera symultaneously and silently. These images can be accesed from the app by going to (app->three line menu->intruder selfies) or by using '#email_intruder_selfie' command.
     </li>
     <li><b>#email_intruder_selfie</b><br>
     This command sends an email to the registered email address with the images taken from '#take_intruder_selfie' command as attachment. <i>This command needs internet connection to work properly.</i>
+    </li>
+    <li><b>#test_service</b><br>
+    This command returns positive response if the Irotect services is running properly. If no SMS is recieved from the device then it is doubtful to say if the services are running or not.
+    </li>
+    <li><b>#device_info</b><br>
+    This command returns current status of the device and other useful information.
+    </li>
+    <li><b>#forgot_pattern</b><br>
+    This command returns the hint you saved in the app to remember your keyguard pattern(Note - this command only works if a pattern hint is specified in 'menu->keyguard hint').
     </li>
 </ul>
 <div id="faq">
