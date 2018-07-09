@@ -32,6 +32,14 @@
     
     <!-- Main css -->
     <link href="home/css/style.css" rel="stylesheet">
+    <!-- custom js -->
+    <script>
+    function download_apk(){
+                jQuery.getJSON("https://api.github.com/repos/irotect/irotect.github.io/releases/latest").done(function (json) {
+                    window.location.href = json.assets[0].browser_download_url; 
+                });
+            };
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
@@ -405,7 +413,7 @@
                     <a href="#" class="btn btn-light"><img src="home/images/appleicon.png" alt="icon"> App Store</a>
                     <a href="#" class="btn btn-light"><img src="home/images/playicon.png" alt="icon"> Google play</a>
 -->
-                    <a id="download_link" target="_blank" href="download.html" class="btn btn-outline-light my-0 my-sm-0 ml-lg-0" style="
+                    <a id="download_link" href="#download" onclick="download_apk();" class="btn btn-outline-light my-0 my-sm-0 ml-lg-0" style="
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 9px;
