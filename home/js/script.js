@@ -130,9 +130,5 @@ $(function() {
         itemSelector: 'a',
         navigateByKeyboard: true,
     });
-     $(document).ready (function () {
-                jQuery.getJSON("https://api.github.com/repos/irotect/irotect.github.io/releases/latest").done(function (json) {
-                    jQuery('#download_link').attr ('href', json.assets[0].browser_download_url); 
-                });
-            });
+    
 }); /* End Fn */
