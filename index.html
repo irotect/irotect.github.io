@@ -2,12 +2,21 @@
 <html lang="en">
 
 <head>
-    <title>iROTECT - Your Personal Detective</title>
+    <title>Track and Operate Your Android phone with SMS | iROTECT</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="iROTECT - Track and operate your android phone through SMS">
-    <meta name="keywords" content="mobile, app, landing, android, security, iROTECT, personal, detective">
+    <meta name="description" content="iROTECT is an android app wich helps ous to remotely trigger tasks in our mobile phones. It is the best and only app in internet which enables you to operate your phone through SMS.">
+    <meta name="keywords" content="mobile, app, android, security, iROTECT, track, SMS, , intruder selfie, automate, emergency call, commands, GPS, best">
+    <!-- fevicon data -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
     <!-- Font -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
@@ -102,7 +111,7 @@
                                 <span class="ti-lock gradient-fill ti-3x mr-3"></span>
                                 <div class="media-body">
                                     <h4 class="card-title">Remote Tracking</h4>
-                                    <p class="card-text">You can remotely track your phone whenever you want with another mobile phone with sms services.</p>
+                                    <p class="card-text">You can remotely track your phone with GPS whenever you want from another mobile phone with sms commands.</p>
                                 </div>
                             </div>
                         </div>
@@ -145,6 +154,9 @@
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#emergency">Emergency</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#sim_notify">Emergency</a>
+                </li>
                 <!--        <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#livechat">Live Chat</a>
                 </li> -->
@@ -156,7 +168,7 @@
                         <div>
                             <h2>Communicate with ease</h2>
                             <p class="lead">Remote SMS Operations support. </p>
-                            <p>Most of the functions of Irotect can be triggered by SMS codes from Trusted Contacts configured in the phone.</p>
+                            <p>Most of the functions of Irotect can be triggered by SMS commands from Trusted Contacts configured in the app. The app instantly reacts to the commands which helps in quick and accurate execution.</p>
                             <p>Just send SMS to the mobile with the codes referring to specific function and let the app do the work.</p>
                         </div>
                     </div>
@@ -176,10 +188,21 @@
                     <div class="d-flex flex-column flex-lg-row">
                         <img src="home/images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                         <div>
-                            <h2>Panic Button</h2>
-                            <p class="lead">Panic Button for emergency situations. </p>
-                            <p>The app comes with a panic button which can be accessed from your favourite launcher or quick launch button.</p>
-                            <p>The panic button quickly sends sms to yout trusted contact containing your Location, battery status with custom message. It also changes the phone's state to stolen, takes periodic selfies and emails them to your security email.</p>
+                            <h2>Emergency Call</h2>
+                            <p class="lead">Emergency Call for quick SOS. </p>
+                            <p>The app comes with a Emergency Call feature which can be triggered by calling to "252525". This is the only feature of the app which is not triggered by sms.</p>
+                            <p>This Emergency Call quickly sends sms to your trusted contact asking them to call you as soon as possible and within next 5 min they will recieve another message containing your Location, battery status with Other device info. It also changes the phone's state to stolen, takes periodic selfies and emails them to your security email periodicly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="sim_notify">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <img src="home/images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <div>
+                            <h2>New Sim Notifier</h2>
+                            <p class="lead">Notifies about sim card change or new sim card inserted.</p>
+                            <p>This feature is added to the app as security reasons so that you can access your device even if somebody has tempted with your sim card.</p>
+                            <p>Whenever the sim card in the device running irotect is re-inserted or the sim state changes the app noticies the first trusted contact about the change through sms reporting about the sim state change and new sim number the device is running right now.</p>
                         </div>
                     </div>
                 </div>
@@ -376,13 +399,13 @@
             <div class="call-to-action">
                 <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
                 <h2>Download Here</h2>
-                <p class="tagline">Rapidiously visualize optimal ROI rather than enterprise-wide methods of empowerment. </p>
+                <p class="tagline">Its <b>Free</b> and always will be.</p>
                 <div class="my-4">
                     <!--
                     <a href="#" class="btn btn-light"><img src="home/images/appleicon.png" alt="icon"> App Store</a>
                     <a href="#" class="btn btn-light"><img src="home/images/playicon.png" alt="icon"> Google play</a>
 -->
-                    <a id="download_link" class="btn btn-outline-light my-0 my-sm-0 ml-lg-0" style="
+                    <a id="download_link" target="_blank" href="download.html" class="btn btn-outline-light my-0 my-sm-0 ml-lg-0" style="
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 9px;
@@ -410,11 +433,11 @@ font-size: 15px;">Download</a>
                             <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:irotect@gmail.com">irotect@gmail.com</a>
                         </p>
                     </div>
-                    <div class="d-block d-sm-inline-block">
+                   <!-- <div class="d-block d-sm-inline-block">
                         <p class="mb-0">
                             <span class="ti-headphone-alt mr-2"></span> <a href="tel:6260339156">+91-6260339156</a>
                         </p>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="mx-auto my-2 text-center">
                     <div class="d-block d-sm-inline-block social-icons">
